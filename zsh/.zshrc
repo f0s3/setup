@@ -1,7 +1,8 @@
 export ZSH="$HOME/.oh-my-zsh"
 
-plugins=(git zsh-autosuggestions fast-syntax-highlighting zsh-autocomplete)
-
+plugins=(git zsh-autosuggestions fast-syntax-highlighting tmux)
+ZSH_TMUX_AUTOSTART=true
+export EDITOR="nvim"
 source $ZSH/oh-my-zsh.sh
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -28,7 +29,7 @@ alias gplr='git pull -r --rebase=preserve'
 alias gplrs='git stash;git pull -r --rebase=preserve;git stash pop'
 alias gp='git push'
 alias gpf='git push --force'
-alias gpsu='git push -u origin HEAD'
+# alias gpsu='git push -u origin HEAD'
 alias ga='git add'
 alias gd='git diff'
 alias gc='git commit'
@@ -58,4 +59,9 @@ alias lss='ls'
 alias ll='exa -la --icons --sort="type"'
 
 alias v='nvim'
+
+cd ~
+
+# ssh reset
+alias sr='ssh-add ~/.ssh/LightsailDefaultKeyPair-eu-central-1.pem && ssh-add ~/.ssh/pleso && ssh-add ~/.ssh/personal'
 
