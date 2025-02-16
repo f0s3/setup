@@ -1,0 +1,137 @@
+{
+  "additional-repositories": ["multilib"],
+  "archinstall-language": "English",
+  "audio_config": {
+    "audio": "pipewire"
+  },
+  "bootloader": "Systemd-boot",
+  "config_version": "2.8.6",
+  "debug": false,
+  "disk_config": {
+    "config_type": "default_layout",
+    "device_modifications": [
+      {
+        "device": "/dev/sda",
+        "partitions": [
+          {
+            "btrfs": [],
+            "dev_path": null,
+            "flags": ["Boot", "ESP"],
+            "fs_type": "fat32",
+            "mount_options": [],
+            "mountpoint": "/boot",
+            "obj_id": "1a7c51f9-4530-4183-8b29-95a8fb1554d9",
+            "size": {
+              "sector_size": {
+                "unit": "B",
+                "value": 512
+              },
+              "unit": "GiB",
+              "value": 1
+            },
+            "start": {
+              "sector_size": {
+                "unit": "B",
+                "value": 512
+              },
+              "unit": "MiB",
+              "value": 1
+            },
+            "status": "create",
+            "type": "primary"
+          },
+          {
+            "btrfs": [],
+            "dev_path": null,
+            "flags": [],
+            "fs_type": "btrfs",
+            "mount_options": ["compress=zstd"],
+            "mountpoint": "/",
+            "obj_id": "6d597420-b7b4-4e88-9770-a9663faa8aa1",
+            "size": {
+              "sector_size": {
+                "unit": "B",
+                "value": 512
+              },
+              "unit": "B",
+              "value": 20398997504
+            },
+            "start": {
+              "sector_size": {
+                "unit": "B",
+                "value": 512
+              },
+              "unit": "B",
+              "value": 1074790400
+            },
+            "status": "create",
+            "type": "primary"
+          }
+        ],
+        "wipe": true
+      }
+    ]
+  },
+  "hostname": "g14",
+  "kernels": ["linux", "linux-lts"],
+  "locale_config": {
+    "kb_layout": "us",
+    "sys_enc": "UTF-8",
+    "sys_lang": "en_US"
+  },
+  "mirror_config": null,
+  "network_config": {
+    "type": "nm"
+  },
+  "no_pkg_lookups": false,
+  "ntp": true,
+  "offline": false,
+  "packages": [
+    "base-devel",
+    "xorg",
+    "xorg-server",
+    "git",
+    "picom",
+    "alacritty",
+    "polybar",
+    "i3",
+    "rofi",
+    "discord",
+    "lightdm",
+    "vim",
+    "neovim",
+    "stow",
+    "zoxide",
+    "eza",
+    "bat",
+    "python-pipx",
+    "dtrx",
+    "zoxide",
+    "starship",
+    "ttf-jetbrains-mono-nerd",
+    "ttf-firacode-nerd",
+    "ttf-hack-nerd",
+    "ttf-dejavu-nerd",
+    "nodejs",
+    "zsh-autosuggestions",
+    "zsh-syntax-highlighting"
+  ],
+  "parallel downloads": 0,
+  "profile_config": {
+    "gfx_driver": "AMD / ATI (open-source)",
+    "greeter": null,
+    "profile": {
+      "custom_settings": {},
+      "details": [],
+      "main": "Xorg"
+    }
+  },
+  "script": "guided",
+  "silent": false,
+  "skip_ntp": false,
+  "skip_version_check": false,
+  "swap": true,
+  "timezone": "Europe/Warsaw",
+  "uki": false,
+  "version": "2.8.6"
+}
