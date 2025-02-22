@@ -3,7 +3,7 @@
 ############################
 # Install yay (AUR helper) #
 ############################
-if [[ 'which yay' =~ 'not found' ]]; then
+if [[ `which yay` =~ 'not found' ]]; then
     git clone https://aur.archlinux.org/yay.git
     cd yay || exit
     makepkg -si --noconfirm
