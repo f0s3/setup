@@ -11,7 +11,7 @@ Post-installation installs my [dotfiles](https://github.com/f0s3/dotfiles) and e
 To start installation process, use this command from Arch ISO command prompt:
 
 `
-curl https://raw.githubusercontent.com/f0s3/setup/refs/heads/main/install.sh | sh
+curl -sSfL https://raw.githubusercontent.com/f0s3/setup/refs/heads/main/install.sh | sh
 `
 
 
@@ -35,5 +35,5 @@ This command with launch a script that will:
 After successfully installing and booting into the system, run `post_install.sh` to finish the installation with this command:
 
 `
-curl https://raw.githubusercontent.com/f0s3/setup/refs/heads/main/post_install.sh | sh
+curl -sSfL https://raw.githubusercontent.com/f0s3/setup/refs/heads/main/post_install.sh | sh
 `
