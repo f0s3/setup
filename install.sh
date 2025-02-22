@@ -1,7 +1,7 @@
 #!/bin/bash
 
-curl https://raw.githubusercontent.com/f0s3/setup/refs/heads/main/config.json -o config.json
-curl https://raw.githubusercontent.com/f0s3/setup/refs/heads/main/creds.json -o creds.json
+curl -sSfL https://raw.githubusercontent.com/f0s3/setup/refs/heads/main/config.json -o config.json
+curl -sSfL https://raw.githubusercontent.com/f0s3/setup/refs/heads/main/creds.json -o creds.json
 
 pacman-key --init
 pacman-key --populate archlinux
