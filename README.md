@@ -35,5 +35,5 @@ This command with launch a script that will:
 After successfully installing and booting into the system, run `post_install.sh` to finish the installation with this command:
 
 `
-curl -sSfL https://raw.githubusercontent.com/f0s3/setup/refs/heads/main/post_install.sh | sh
+curl -sSfL https://raw.githubusercontent.com/f0s3/setup/refs/heads/main/post_install.sh | zsh
 `
