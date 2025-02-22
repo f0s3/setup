@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 ############################
 # Install yay (AUR helper) #
@@ -36,8 +36,6 @@ git remote set-url origin git@github.com:f0s3/dotfiles
 ###########################################
 # Install zsh with oh-my-zsh and starship #
 ###########################################
-sudo pacman -S --noconfirm zsh
-
 chsh -s $(which zsh) $USER
 
 RUNZSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
