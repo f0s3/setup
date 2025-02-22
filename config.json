@@ -1,137 +1,300 @@
 {
-  "additional-repositories": ["multilib"],
-  "archinstall-language": "English",
-  "audio_config": {
-    "audio": "pipewire"
-  },
-  "bootloader": "Systemd-boot",
-  "config_version": "2.8.6",
-  "debug": false,
-  "disk_config": {
-    "config_type": "default_layout",
-    "device_modifications": [
-      {
-        "device": "/dev/sda",
-        "partitions": [
-          {
-            "btrfs": [],
-            "dev_path": null,
-            "flags": ["Boot", "ESP"],
-            "fs_type": "fat32",
-            "mount_options": [],
-            "mountpoint": "/boot",
-            "obj_id": "1a7c51f9-4530-4183-8b29-95a8fb1554d9",
-            "size": {
-              "sector_size": {
-                "unit": "B",
-                "value": 512
-              },
-              "unit": "GiB",
-              "value": 1
+    "additional-repositories": [
+        "multilib"
+    ],
+    "archinstall-language": "English",
+    "audio_config": {
+        "audio": "pipewire"
+    },
+    "bootloader": "Systemd-boot",
+    "config_version": "2.8.6",
+    "debug": false,
+    "disk_config": {
+        "config_type": "manual_partitioning",
+        "device_modifications": [
+            {
+                "device": "/dev/nvme0n1",
+                "partitions": [
+                    {
+                        "btrfs": [],
+                        "dev_path": "/dev/nvme0n1p1",
+                        "flags": [
+                            "Boot",
+                            "ESP"
+                        ],
+                        "fs_type": "fat32",
+                        "mount_options": [],
+                        "mountpoint": null,
+                        "obj_id": "c5b00ad0-ef24-4478-82a6-448dc70d8e37",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 104857600
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "sectors",
+                            "value": 2048
+                        },
+                        "status": "existing",
+                        "type": "primary"
+                    },
+                    {
+                        "btrfs": [],
+                        "dev_path": "/dev/nvme0n1p2",
+                        "flags": [],
+                        "fs_type": null,
+                        "mount_options": [],
+                        "mountpoint": null,
+                        "obj_id": "0da381c1-812b-4e55-a440-4232c87d358b",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 16777216
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "sectors",
+                            "value": 206848
+                        },
+                        "status": "existing",
+                        "type": "primary"
+                    },
+                    {
+                        "btrfs": [],
+                        "dev_path": "/dev/nvme0n1p3",
+                        "flags": [],
+                        "fs_type": "ntfs",
+                        "mount_options": [],
+                        "mountpoint": null,
+                        "obj_id": "c9319932-fef1-47cc-9dfb-28ad57e43258",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 751619276800
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "sectors",
+                            "value": 239616
+                        },
+                        "status": "existing",
+                        "type": "primary"
+                    },
+                    {
+                        "btrfs": [],
+                        "dev_path": "/dev/nvme0n1p5",
+                        "flags": [],
+                        "fs_type": "ext4",
+                        "mount_options": [],
+                        "mountpoint": "/",
+                        "obj_id": "76aa80a6-ef52-45de-a3f3-b90f1e514b41",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 751619276800
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "sectors",
+                            "value": 1468246016
+                        },
+                        "status": "modify",
+                        "type": "primary"
+                    },
+                    {
+                        "btrfs": [],
+                        "dev_path": "/dev/nvme0n1p6",
+                        "flags": [
+                            "Boot",
+                            "ESP"
+                        ],
+                        "fs_type": "fat32",
+                        "mount_options": [],
+                        "mountpoint": "/boot",
+                        "obj_id": "77930879-38f4-4533-bec5-a24aa0741ff5",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 524288000
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "sectors",
+                            "value": 2936252416
+                        },
+                        "status": "modify",
+                        "type": "primary"
+                    },
+                    {
+                        "btrfs": [],
+                        "dev_path": "/dev/nvme0n1p7",
+                        "flags": [],
+                        "fs_type": null,
+                        "mount_options": [],
+                        "mountpoint": null,
+                        "obj_id": "1b7cc9ac-760a-4b4a-b5aa-7fdc3f32e8d7",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 543732793344
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "sectors",
+                            "value": 2937276416
+                        },
+                        "status": "existing",
+                        "type": "primary"
+                    },
+                    {
+                        "btrfs": [],
+                        "dev_path": "/dev/nvme0n1p4",
+                        "flags": [],
+                        "fs_type": "ntfs",
+                        "mount_options": [],
+                        "mountpoint": null,
+                        "obj_id": "5060cb42-530e-47c4-a86b-7a7f4c17fa2f",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 788529152
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "sectors",
+                            "value": 3999254528
+                        },
+                        "status": "existing",
+                        "type": "primary"
+                    }
+                ],
+                "wipe": false
+            }
+        ]
+    },
+    "hostname": "g14",
+    "kernels": [
+        "linux",
+        "linux-lts"
+    ],
+    "locale_config": {
+        "kb_layout": "us",
+        "sys_enc": "UTF-8",
+        "sys_lang": "en_US"
+    },
+    "mirror_config": {
+        "custom_mirrors": [],
+        "mirror_regions": {
+            "Poland": [
+                "https://arch.midov.pl/arch/$repo/os/$arch",
+                "https://ftp.psnc.pl/linux/archlinux/$repo/os/$arch",
+                "https://mirror.juniorjpdj.pl/archlinux/$repo/os/$arch",
+                "http://arch.midov.pl/arch/$repo/os/$arch",
+                "http://mirror.juniorjpdj.pl/archlinux/$repo/os/$arch",
+                "https://arch.sakamoto.pl/$repo/os/$arch",
+                "http://ftp.psnc.pl/linux/archlinux/$repo/os/$arch",
+                "http://arch.sakamoto.pl/$repo/os/$arch",
+                "http://ftp.icm.edu.pl/pub/Linux/dist/archlinux/$repo/os/$arch",
+                "https://ftp.icm.edu.pl/pub/Linux/dist/archlinux/$repo/os/$arch"
+            ]
+        }
+    },
+    "network_config": {
+        "type": "nm"
+    },
+    "no_pkg_lookups": false,
+    "ntp": true,
+    "offline": false,
+    "packages": [
+        "base-devel",
+        "git",
+        "zsh",
+        "picom",
+        "alacritty",
+        "polybar",
+        "rofi",
+        "discord",
+        "lightdm",
+        "vim",
+        "neovim",
+        "stow",
+        "zoxide",
+        "eza",
+        "bat",
+        "python-pipx",
+        "zoxide",
+        "starship",
+        "ttf-jetbrains-mono-nerd",
+        "ttf-firacode-nerd",
+        "ttf-hack-nerd",
+        "ttf-dejavu-nerd",
+        "nodejs",
+        "zsh-autosuggestions",
+        "zsh-syntax-highlighting"
+    ],
+    "parallel downloads": 0,
+    "profile_config": {
+        "gfx_driver": "AMD / ATI (open-source)",
+        "greeter": "lightdm-slick-greeter",
+        "profile": {
+            "custom_settings": {
+                "i3-wm": {}
             },
-            "start": {
-              "sector_size": {
-                "unit": "B",
-                "value": 512
-              },
-              "unit": "MiB",
-              "value": 1
-            },
-            "status": "create",
-            "type": "primary"
-          },
-          {
-            "btrfs": [],
-            "dev_path": null,
-            "flags": [],
-            "fs_type": "btrfs",
-            "mount_options": ["compress=zstd"],
-            "mountpoint": "/",
-            "obj_id": "6d597420-b7b4-4e88-9770-a9663faa8aa1",
-            "size": {
-              "sector_size": {
-                "unit": "B",
-                "value": 512
-              },
-              "unit": "B",
-              "value": 20398997504
-            },
-            "start": {
-              "sector_size": {
-                "unit": "B",
-                "value": 512
-              },
-              "unit": "B",
-              "value": 1074790400
-            },
-            "status": "create",
-            "type": "primary"
-          }
-        ],
-        "wipe": true
-      }
-    ]
-  },
-  "hostname": "g14",
-  "kernels": ["linux", "linux-lts"],
-  "locale_config": {
-    "kb_layout": "us",
-    "sys_enc": "UTF-8",
-    "sys_lang": "en_US"
-  },
-  "mirror_config": null,
-  "network_config": {
-    "type": "nm"
-  },
-  "no_pkg_lookups": false,
-  "ntp": true,
-  "offline": false,
-  "packages": [
-    "base-devel",
-    "xorg",
-    "xorg-server",
-    "git",
-    "zsh",
-    "picom",
-    "alacritty",
-    "polybar",
-    "i3",
-    "rofi",
-    "discord",
-    "lightdm",
-    "vim",
-    "neovim",
-    "stow",
-    "zoxide",
-    "eza",
-    "bat",
-    "python-pipx",
-    "zoxide",
-    "starship",
-    "ttf-jetbrains-mono-nerd",
-    "ttf-firacode-nerd",
-    "ttf-hack-nerd",
-    "ttf-dejavu-nerd",
-    "nodejs",
-    "zsh-autosuggestions",
-    "zsh-syntax-highlighting"
-  ],
-  "parallel downloads": 0,
-  "profile_config": {
-    "gfx_driver": "AMD / ATI (open-source)",
-    "greeter": null,
-    "profile": {
-      "custom_settings": {},
-      "details": [],
-      "main": "Xorg"
-    }
-  },
-  "script": "guided",
-  "silent": false,
-  "skip_ntp": false,
-  "skip_version_check": false,
-  "swap": true,
-  "timezone": "Europe/Warsaw",
-  "uki": false,
-  "version": "2.8.6"
+            "details": [
+                "i3-wm"
+            ],
+            "main": "Desktop"
+        }
+    },
+    "script": "guided",
+    "silent": false,
+    "skip_ntp": false,
+    "skip_version_check": false,
+    "swap": true,
+    "timezone": "Europe/Warsaw",
+    "uki": false,
+    "version": "2.8.6"
 }
