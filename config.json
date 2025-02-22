@@ -91,6 +91,7 @@
     "xorg",
     "xorg-server",
     "git",
+    "zsh",
     "picom",
     "alacritty",
     "polybar",
