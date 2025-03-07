@@ -19,11 +19,11 @@ curl -sSfL https://raw.githubusercontent.com/f0s3/setup/refs/heads/main/install.
 
 This command with launch a script that will:
 
- - download `config.json` and `creds.json` from this repository into current folder
+ - download `config.json` from this repository into current folder
  - update arch mirrors before attempting to install
- - install vim
  - open creds.json in order for user to change user and root passwords
  - launch installation process (archinstall), in which **it is expected from user to change partitioning manually**
+ - you need to manually set **user and root credentials and username**
  - optionally **change graphics drivers** before installation
  - optionally **change installed programs** before installation
  - after pressing 'Install', installation process begins
