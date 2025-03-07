@@ -13,17 +13,17 @@ fi
 ########################
 # Install AUR packages #
 ########################
-yay -S --noconfirm xkblayout-state nvm bun-bin
+yay -S --noconfirm xkblayout-state nvm
 
 ###############################
 # Install i3-workspace-groups #
 ###############################
 pipx install i3-workspace-groups
 
-###############
-# Install nvm #
-# #############
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+#######################
+# Install bum and bun #
+#######################
+curl -fsSL https://github.com/owenizedd/bum/raw/main/install.sh | bash
 
 ####################
 # Install dotfiles #
