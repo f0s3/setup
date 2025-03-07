@@ -273,7 +273,13 @@
         "ttf-dejavu-nerd",
         "nodejs",
         "zsh-autosuggestions",
-        "zsh-syntax-highlighting"
+        "zsh-syntax-highlighting",
+        "scrot",
+        "feh",
+        "xclip",
+        "xsel",
+        "blueman",
+        "rofi"
     ],
     "parallel downloads": 0,
     "profile_config": {
