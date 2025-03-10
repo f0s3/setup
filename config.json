@@ -280,7 +280,8 @@
         "xsel",
         "blueman",
         "rofi",
-        "fzf"
+        "fzf",
+        "zsh-completions"
     ],
     "parallel downloads": 0,
     "profile_config": {
