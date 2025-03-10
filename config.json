@@ -279,7 +279,8 @@
         "xclip",
         "xsel",
         "blueman",
-        "rofi"
+        "rofi",
+        "fzf"
     ],
     "parallel downloads": 0,
     "profile_config": {
