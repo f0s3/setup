@@ -13,7 +13,7 @@ fi
 ########################
 # Install AUR packages #
 ########################
-yay -S --noconfirm xkblayout-state nvm
+yay -S --noconfirm xkblayout-state nvm xkb-switch
 
 ###############################
 # Install i3-workspace-groups #
