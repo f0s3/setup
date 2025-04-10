@@ -37,3 +37,7 @@ After successfully installing and booting into the system, run `post_install.sh`
 `
 curl -sSfL https://raw.githubusercontent.com/f0s3/setup/refs/heads/main/post_install.sh | zsh
 `
+
+## TODO
+
+- install asusctl and do asusctl -c 60, which caps battery charge at 60% to save it 
