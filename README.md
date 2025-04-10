@@ -41,4 +41,4 @@ curl -sSfL https://raw.githubusercontent.com/f0s3/setup/refs/heads/main/post_ins
 ## TODO
 
 - install asusctl and do asusctl -c 60, which caps battery charge at 60% to save it
-- install openrazer, (`yay -S python-pip linux-headers openrazer openrazer-driver-dkms polychromatic && sudo dkms install -m openrazer-driver/3.10.1 && sudo gpasswd -a $USER plugdev && sudo modprobe razermouse && sudo systemctl enable razerd && sudo systemctl start razerd && sudo systemctl enable openrazer-daemon && sudo systemctl start openrazer-daemon && pipx install razer-cli`)
+- install openrazer, (`yay -S python-pip linux-headers openrazer openrazer-driver-dkms polychromatic && sudo dkms install -m openrazer-driver/3.10.1 && sudo gpasswd -a $USER plugdev && sudo modprobe razermouse && sudo systemctl enable razerd && sudo systemctl start razerd && sudo systemctl enable openrazer-daemon && sudo systemctl start openrazer-daemon && pipx install razer-cli && pipx inject razer-cli openrazer`)
